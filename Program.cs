@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace sprint3sortnumbers
 {
@@ -18,6 +19,12 @@ namespace sprint3sortnumbers
             {
                 Console.WriteLine(val + " ");
             }
+
+            //print out the first and last number
+            var last = numbers.Last();
+            var first = numbers.First();
+
+            Console.WriteLine($"The Last Number is {last} and the first number is {first}");
 
             Console.ReadKey();
         }
